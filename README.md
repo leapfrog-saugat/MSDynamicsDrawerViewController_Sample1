@@ -9,7 +9,7 @@ You have a project in which you want to show the side menu on swipe gesture towa
 
 #Usage
 This project is just an example to show the use of MSDynamicsDrawerViewController for a particular scenario. But it can be easily modified for other projects as well.
-![alt text](https://github.com/leapfrog-saugat/MSDynamicsDrawerViewController_Sample1/raw/master/GitImages/HomeScreenDrag.gif =300x450 "HomeScreenDrag")
+![alt text](https://github.com/leapfrog-saugat/MSDynamicsDrawerViewController_Sample1/raw/master/GitImages/HomeScreenDrag.gif "HomeScreenDrag")
 ![alt text](https://github.com/leapfrog-saugat/MSDynamicsDrawerViewController_Sample1/raw/master/GitImages/RedGreen.gif "RedGreen")
 
 #Installation
