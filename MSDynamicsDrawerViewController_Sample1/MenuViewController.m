@@ -14,13 +14,9 @@
 @property (nonatomic, strong) NSDictionary *paneViewControllerTitles;
 @property (nonatomic, strong) NSDictionary *paneViewControllerIdentifiers;
 
-@property (nonatomic, strong) NSDictionary *sectionTitles;
-@property (nonatomic, strong) NSArray *tableViewSectionBreaks;
-
 @property (nonatomic, strong) UIBarButtonItem *paneStateBarButtonItem;
 @property (nonatomic, strong) UIBarButtonItem *paneRevealLeftBarButtonItem;
 @property (nonatomic, strong) UIBarButtonItem *paneRevealRightBarButtonItem;
-
 
 @end
 
@@ -77,40 +73,26 @@
 - (void)transitionToViewController:(MSPaneViewControllerType)paneViewControllerType {
     
     if (paneViewControllerType == self.paneViewControllerType) {
-//        [self.dynamicsDrawerViewController setPaneViewController:paneViewController];
         [self.dynamicsDrawerViewController setPaneState:MSDynamicsDrawerPaneStateClosed animated:YES allowUserInterruption:YES completion:nil];
         return;
     }
     
     BOOL animateTransition = self.dynamicsDrawerViewController.paneViewController != nil;
     
-    
-    
-
-    
     UIViewController *paneViewController = [self.storyboard instantiateViewControllerWithIdentifier:self.paneViewControllerIdentifiers[@(paneViewControllerType)]];
-    
     paneViewController.navigationItem.title = self.paneViewControllerTitles[@(paneViewControllerType)];
-    
-    self.paneRevealLeftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Left Reveal Icon"] style:UIBarButtonItemStyleBordered target:self action:@selector(dynamicsDrawerRevealLeftBarButtonItemTapped:)];
-    self.paneRevealLeftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStyleBordered target:self action:@selector(dynamicsDrawerRevealLeftBarButtonItemTapped:)];
-    paneViewController.navigationItem.leftBarButtonItem = self.paneRevealLeftBarButtonItem;
-    
-    self.paneRevealRightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Right Reveal Icon"] style:UIBarButtonItemStyleBordered target:self action:@selector(dynamicsDrawerRevealRightBarButtonItemTapped:)];
-    paneViewController.navigationItem.rightBarButtonItem = self.paneRevealRightBarButtonItem;
 
     UINavigationController *paneNavigationViewController = [[UINavigationController alloc] initWithRootViewController:paneViewController];
     [self.dynamicsDrawerViewController setPaneViewController:paneNavigationViewController animated:animateTransition completion:nil];
+    
     self.paneViewControllerType = paneViewControllerType;
 }
 
-- (void)dynamicsDrawerRevealLeftBarButtonItemTapped:(id)sender
-{
+- (void)dynamicsDrawerRevealLeftBarButtonItemTapped:(id)sender {
     [self.dynamicsDrawerViewController setPaneState:MSDynamicsDrawerPaneStateOpen inDirection:MSDynamicsDrawerDirectionLeft animated:YES allowUserInterruption:YES completion:nil];
 }
 
-- (void)dynamicsDrawerRevealRightBarButtonItemTapped:(id)sender
-{
+- (void)dynamicsDrawerRevealRightBarButtonItemTapped:(id)sender {
     [self.dynamicsDrawerViewController setPaneState:MSDynamicsDrawerPaneStateOpen inDirection:MSDynamicsDrawerDirectionRight animated:YES allowUserInterruption:YES completion:nil];
 }
 

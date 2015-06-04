@@ -13,7 +13,6 @@
 		CD9605A11B201BAE009B639A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD96059F1B201BAE009B639A /* LaunchScreen.xib */; };
 		CD9605AD1B201BAE009B639A /* MSDynamicsDrawerViewController_Sample1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9605AC1B201BAE009B639A /* MSDynamicsDrawerViewController_Sample1Tests.m */; };
 		CD9605B81B201EBC009B639A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9605B61B201EBC009B639A /* Main.storyboard */; };
-		CD9605C51B201F50009B639A /* DynamicsDrawerContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9605BA1B201F50009B639A /* DynamicsDrawerContainerVC.m */; };
 		CD9605C61B201F50009B639A /* GreenScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9605BC1B201F50009B639A /* GreenScreenVC.m */; };
 		CD9605C71B201F50009B639A /* HomeScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9605BE1B201F50009B639A /* HomeScreenVC.m */; };
 		CD9605C81B201F50009B639A /* LoginScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9605C01B201F50009B639A /* LoginScreenVC.m */; };
@@ -44,8 +43,6 @@
 		CD9605AB1B201BAE009B639A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD9605AC1B201BAE009B639A /* MSDynamicsDrawerViewController_Sample1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDynamicsDrawerViewController_Sample1Tests.m; sourceTree = "<group>"; };
 		CD9605B71B201EBC009B639A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CD9605B91B201F50009B639A /* DynamicsDrawerContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamicsDrawerContainerVC.h; path = MSDynamicsDrawerViewController_Sample1/DynamicsDrawerContainerVC.h; sourceTree = "<group>"; };
-		CD9605BA1B201F50009B639A /* DynamicsDrawerContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DynamicsDrawerContainerVC.m; path = MSDynamicsDrawerViewController_Sample1/DynamicsDrawerContainerVC.m; sourceTree = "<group>"; };
 		CD9605BB1B201F50009B639A /* GreenScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GreenScreenVC.h; path = MSDynamicsDrawerViewController_Sample1/GreenScreenVC.h; sourceTree = "<group>"; };
 		CD9605BC1B201F50009B639A /* GreenScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GreenScreenVC.m; path = MSDynamicsDrawerViewController_Sample1/GreenScreenVC.m; sourceTree = "<group>"; };
 		CD9605BD1B201F50009B639A /* HomeScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeScreenVC.h; path = MSDynamicsDrawerViewController_Sample1/HomeScreenVC.h; sourceTree = "<group>"; };
@@ -100,8 +97,6 @@
 		CD9605841B201BAE009B639A = {
 			isa = PBXGroup;
 			children = (
-				CD9605B91B201F50009B639A /* DynamicsDrawerContainerVC.h */,
-				CD9605BA1B201F50009B639A /* DynamicsDrawerContainerVC.m */,
 				CD9605BB1B201F50009B639A /* GreenScreenVC.h */,
 				CD9605BC1B201F50009B639A /* GreenScreenVC.m */,
 				CD9605BD1B201F50009B639A /* HomeScreenVC.h */,
@@ -309,7 +304,6 @@
 				CD9605CA1B201F50009B639A /* RedScreenVC.m in Sources */,
 				CD9605CD1B201FE9009B639A /* AppDelegate.m in Sources */,
 				CD9605C91B201F50009B639A /* MenuViewController.m in Sources */,
-				CD9605C51B201F50009B639A /* DynamicsDrawerContainerVC.m in Sources */,
 				CD9605931B201BAE009B639A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
