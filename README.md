@@ -20,7 +20,7 @@ Add the following to your Podfile and run $pod install
 If you don't have CocoaPods installed or integrated into your project, you can learn how to do so [here](https://cocoapods.org).
 
 #Requirements
-Requires iOS 7.0, ARC, and the QuartzCore Framework.
+Requires iOS 7.0 or higher, ARC, and the QuartzCore Framework.
 
 #Note
 This project runs just fine. But some clean ups are necessary on the code. I will continue updating this project as soon as I can scrape some free time from my schedule. Comments are appreciated.
