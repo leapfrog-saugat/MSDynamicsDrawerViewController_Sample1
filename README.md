@@ -11,7 +11,16 @@ You have a project in which you want to show the side menu on swipe gesture towa
 This project is just an example to show the use of MSDynamicsDrawerViewController for a particular scenario. But it can be easily modified for other projects as well.
 
 #Installation
-Simply install this project with any method you find comfortable. No extra things to install
+Either clone or download zip file from the github. Pod file is already present in the project. In case you get into some complication regarding pod file, you can install it yourself.
+
+Add the following to your Podfile and run $pod install
+
+>pod 'MSDynamicsDrawerViewController'
+
+If you don't have CocoaPods installed or integrated into your project, you can learn how to do so [here](https://cocoapods.org).
+
+#Requirements
+Requires iOS 7.0, ARC, and the QuartzCore Framework.
 
 #Note
 This project runs just fine. But some clean ups are necessary on the code. I will continue updating this project as soon as I can scrape some free time from my schedule. Comments are appreciated.
